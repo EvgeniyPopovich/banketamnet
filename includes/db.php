@@ -7,7 +7,7 @@ class Db {
             $dbname = "banketam";
             $user = "root";
             $pass = "";
-            $dsn = "mysql::host=$host;dbname=$dbname;charset=utf8";
+            $dsn = "mysql:host=$host;dbname=$dbname;charset=utf8";
             self::$pdo = new PDO($dsn, $user, $pass);
         }
         return self::$pdo;
